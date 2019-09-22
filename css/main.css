@@ -17,7 +17,7 @@ body {
     text-align: center;
     font-weight: 400;
 }
-
+/*definiendo espacio para isotipo  y barras de menu movil*/
 .header {
     display: flex;
     justify-content: space-between
@@ -26,7 +26,7 @@ body {
 .src-only {
     display: none;
 }
-
+ /*definiendo flecha direccional hacia abajo y dandole color verde*/
 .hide-mobile {
     display: none;
 /*cambianco el tamaño y color a flechita verde bajo logo twitter*/
@@ -52,17 +52,18 @@ ul#menu li:last-child a{
 ul#menu :hover{
     color:red
 }
+/*estableciendo un tamaño general para todos los parrafos*/
 p{
     font-size: 0.75em;
     padding: 1rem;
     line-height: 25px;
 }
-
+/*delimitando tamaño general a la clase logo*/
 .logo {
     width: 90px;
     margin: 1em;
 }
-
+/*organizando espacio y delimitando caracteristicas del menu del nav*/
 .options {
     color: inherit;
     text-decoration: none;
@@ -76,6 +77,7 @@ p{
     align-items: flex-start;
 
 }
+/* dandole tamaño a la fuente de cada opcion del menu*/
 .options i:last-child {
     font-size: 1.6rem;
 }
@@ -84,7 +86,7 @@ p{
 .big-hero img {
     width: 150px;
 }
-
+/*estableciendo tamaño a nombre bajo la imagen */
 .big-hero h2 {
     font-size: 1.875em;
     font-weight: 700;
@@ -93,7 +95,7 @@ p{
 }
 
 .big-hero p {
-    /*cambiando tamanio de fuente */
+    /*cambiando tamanio y color de fuente */
     font-size: 0.9em;
     color: #D7DEE6;
 
@@ -110,6 +112,7 @@ p{
     justify-content: center
 
 }
+/*dandole color a los avg de twitter y logotipo*/
 
 .social-links li a{
     color: #D7DEE6;
@@ -117,33 +120,34 @@ p{
     font-size: 4em;
 }
 
-
+/*estableciendo color a contenedor de los artiulos llamado green area*/
 .green-area {
     background-color: #0AC693; 
 }
 
-
+/*dando paddin a la clase post dentro de green area para un mayor orden*/
 .post {
     padding: 1em;
     margin-bottom: -2px;
 }
+/*pasando de minusculas a mayusculas la palabra publicaciones dentro de green area y arriba de los articulos*/
 .post h2 {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 1.125em;
     margin: 1em;
 }
-
+/*estableciendo un estilo neutro para la lista*/
 .post ul {
     list-style: none;
 }
-
+/*estableciendo tamaño y margen de cada elemento del  articulo*/
 .post ul li {
     min-height: 300px;
     max-width: 350px;
     margin: 2rem auto;
 }
-
+/*aplicando carateristicas de cada articulo */
 .post ul li article {
     overflow: hidden;
     border-radius: 10px;
@@ -151,13 +155,13 @@ p{
     text-align: left;
     padding-bottom: 2em;
 }
-
+/*aplicando tamaño a cada imagen dentro de los articulos*/
 .post article img{
     height: 150px;
     width: 100%;
     object-fit: cover;
 }
-
+/*dandole tamaño a los titulos de los articulos*/
 .post article h3 {
     color: #0D5061;
     margin-top: 2em;
@@ -167,7 +171,7 @@ p{
     overflow: hidden;
     text-overflow: ellipsis;
 }
-
+/*estableciendo tamaño a los parrafos de los articulos*/
 .post article p {
     color:#112935;
     font-size: 0.75em;
@@ -181,18 +185,18 @@ p{
 .about{
     margin-top: 2em;
 }
-
+/*asignando tamaño de fuente y transformando a mayusculas las letras de la palabra "acerca de" */
 .about h2 {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 1.125em;
     margin: 2em;
 }
-
+/*delimitando el tamaño de la imagen del div ubicado de el contendedor about*/
 .bio-info img{
    width: 200px;
 }
-
+/*dandole tamaño, direccion y espaciado al contenoido del parrafo de bio-info*/
 .bio-info p{
     font-size: 16px;
     padding: 2em;
@@ -200,7 +204,7 @@ p{
     line-height: 25px;
     letter-spacing: 2px;
 }
-
+/*haciendo flexible el di contact dando direccio a texto y estableciendo padding*/
 .contact {
     display: flex;
     flex-direction: column;
@@ -211,12 +215,12 @@ p{
 .contact * + * {
     margin-top: 1.5em;
 }
-
+/*haciendo flexible y dando direccion en columnas al campo contact form */
 .contact-form {
     display: flex;
     flex-direction: column;
 }
-
+/*dandole caracteristicas especiales de decoracion a cada uno de los recuadros dentro de contact*/
 .contact-form input, .contact-form textarea{
     padding: 1rem 2rem;
     border: none;
@@ -236,7 +240,7 @@ p{
 ::-moz-placeholder { /* Firefox 19+ */ color: #D7DEE6; } 
  
 :-ms-input-placeholder { color: #D7DEE6; }
-
+/*dando color, tamaño y margen a recuadro contact*/
 .contact-form input[type=submit] {
     background-color: #F74442;
     font-weight: 400;
@@ -249,16 +253,16 @@ p{
 .black-decoration{
     background-image: url("../images/decoracion_oscura_small.svg");
 }
-
+/*dandole color a footer*/
 footer{
     background-color: #0D5061;
     color:#D7DEE6;
 }
-
+/*quitando margen a footer*/
 footer .social-links {
     margin: 0;
 }
-
+/*añadiendo background, posicion, direccion y tamaño de elementos del menu */
 .menu {
     background-color: #112935;
     position: absolute;
@@ -295,28 +299,29 @@ footer .social-links {
         flex-wrap: wrap;
         justify-content: center;
     }
-    
+    /*ajustando elementos dentro de los articulos */
     .post ul li {
-        min-height: 350px;
-        max-height: 3500px;
-        margin: 1rem 2rem;
+        min-height: 300px;
+        max-width: 350px;
+        margin: 2rem 2em 2rem 2em;
         flex: 1 0 300px;
+        justify-content: center;
+        flex-flow: row nowrap
     }
-
-
+    /*añadiendo tamaño y margen de logo*/
     .logo {
         width: 150px;
         margin: 1.5em;
     }
-
+    /*estableciendo orden y posicion de elementos de la clase show-desktop*/
     .show-desktop {
         display: block;
     }
-
+    /*elemento de flecha debajo de logo*/
     .hide-desktop {
         display: none;
     }
-
+    /*añadiendo background, posicion, direccion y tamaño de elementos del menu */
     .menu {
         background-color: #112935; 
         position: static;
@@ -362,14 +367,7 @@ footer .social-links {
    .green-area h2{
        width: 100%
    }
-   .post ul li {
-    display: flex;
-    min-height: 300px;
-    max-width: 350px;
-    margin: 2rem 30px 2rem 26px;
-    justify-content: center;
-    flex-flow: column nowrap
-}
+ 
    
     /*centrando el h2 para no mezclarlo con los div*/
     .about h2{
@@ -407,7 +405,7 @@ footer .social-links {
         width: 50%;
         margin-bottom: 1em;
     }
-   
+   /*haciendo flexible todos los conetenedores */
     .container {
         display: flex;
         flex-wrap: wrap;
@@ -450,10 +448,10 @@ footer .social-links {
    }
    /*ajustando los articulos y centrandolos*/
    .post ul li {
-    min-height: 260px;
-    max-width: 310px;
+    min-height: 35%;
+    max-width: 40%;
     margin: 2rem 10px 2rem 0;
-    margin-left: 13px;
+    margin-left: 1em;
     justify-content: center;
     flex-wrap: nowrap
 }
@@ -490,6 +488,7 @@ footer .social-links {
     margin: -1em  -3em 1em  1.2em ;
 }
 
+   /*haciendo flexible todos los conetenedores */
    .container {
        display: flex;
        flex-wrap: wrap;
@@ -530,7 +529,7 @@ footer .social-links {
     margin: -3em  -2em 3em  1.2em ;
 }
 
-/*estableciendo limites de la resolucion*/
+/*estableciendo limites de la resolucion y haciendo flexible los contenedores*/
 .container {
     display: flex;
     flex-wrap: wrap;
