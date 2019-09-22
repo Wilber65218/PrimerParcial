@@ -331,6 +331,7 @@ footer .social-links {
     /*separando isotipo del nav y dejando un espacio de por medio*/
     .header{
         width: 100%;
+        margin: 0 20px;
         justify-content: space-between
     }
     /*separando un poco los logos para un mayor orden*/
@@ -365,8 +366,7 @@ footer .social-links {
     display: flex;
     min-height: 300px;
     max-width: 350px;
-    margin: 2rem 30px 2rem 0;
-    margin-left: 26px;
+    margin: 2rem 30px 2rem 26px;
     justify-content: center;
     flex-flow: column nowrap
 }
@@ -385,7 +385,7 @@ footer .social-links {
     /*cambiando tamanio de parrafo bajo imagen dentro del div bio info*/
     .bio-info p{
         height: 60%;
-        margin: -1em 1.2em ;
+        margin: -1em -1.5em -1em 1em;
         font-size: 1em
     }
     /*acomodando mejor la imagen del div */
@@ -396,7 +396,11 @@ footer .social-links {
     /*cambianado tamanio del div contact*/
     .contact{
         width: 80%;
-        margin: 1em 1.2em ;
+        margin: 2em 0em 0em 4em ;
+    }
+    .contact-form{
+        width: 85%;
+        height: 90%;
     }
     /*cambiando el tamaño del input */
     .contact-form input[type=submit]{
@@ -428,11 +432,10 @@ footer .social-links {
      
    .header{
        width: 100%;
+       margin:0 4rem;
        justify-content: space-between
    }
-   .header {
-       margin:0 18px 
-   }
+ 
    /*haciendo flexible el contenedor para failitar el acomodamiento de los elementos*/
    .big-hero>.container{
        margin: none;
@@ -457,7 +460,7 @@ footer .social-links {
    /*haciendo flexible  el about para poder mover los div*/
    .about{
        display: flex;
-       margin-top: 2em;
+       margin-top: 2em ;
        justify-content: center; 
    }
    /*centrando el h2 para no mezclarlo con los div*/
@@ -469,14 +472,24 @@ footer .social-links {
    /*separando los divs, poniendo uno a la par de otro*/
    .about div{
        flex:1;
-       margin: 1em;
+       margin: 2em 4em  0 4em;
    }
    /*cambiando el tamaño del input */
    .contact-form input[type=submit]{
        width: 50%;
        margin-bottom: 1em;
    }
-  
+   .bio-info p{
+    height: 60%;
+    margin:0 -3em   ;
+    font-size: 1.1em
+}
+.contact-form{
+    width: 100%;
+    height: 90%;
+    margin: -1em  -3em 1em  1.2em ;
+}
+
    .container {
        display: flex;
        flex-wrap: wrap;
@@ -484,11 +497,7 @@ footer .social-links {
        margin: 0 auto;
        max-width: 1024px;
    }
-    /*separando logos de twitter */
-    footer .social-links>{
-       margin: 0;
-       justify-content: center
-   }
+
 
 }
 
@@ -496,7 +505,8 @@ footer .social-links {
 
      /*estableciendo distancia de elementos del header*/
      .header {
-        margin: 0;
+         width: 100%;
+        margin: 0 3em;
        justify-content: space-between
    }
   /*ajustando elemtos de los articulos*/
@@ -508,6 +518,18 @@ footer .social-links {
     justify-content: center;
     flex-wrap: nowrap
 }
+ /*cambiando tamanio de parrafo bajo imagen dentro del div bio info*/
+ .bio-info p{
+    height: 60%;
+    margin:0 -3em   ;
+    font-size: 1em
+}
+.contact-form{
+    width: 90%;
+    height: 100%;
+    margin: -3em  -2em 3em  1.2em ;
+}
+
 /*estableciendo limites de la resolucion*/
 .container {
     display: flex;
