@@ -366,6 +366,7 @@ footer .social-links {
     min-height: 300px;
     max-width: 350px;
     margin: 2rem 30px 2rem 0;
+    margin-left: 26px;
     justify-content: center;
     flex-flow: column nowrap
 }
